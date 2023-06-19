@@ -35,7 +35,7 @@ export const addItemToCheckout = async (item) => {
     }
     const { id, ...newCartItem } = item;
     try {
-      await axios.post(`/checkout/`, {
+      await axios.post('https://hardware-data.onrender.com/checkout', {
         ...newCartItem,
         productId: id,
         quantity: 1,
