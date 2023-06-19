@@ -1,0 +1,76 @@
+{
+  "name": "hardware-tools",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@craco/craco": "^7.1.0",
+    "@fortawesome/fontawesome-svg-core": "^1.2.34",
+    "@fortawesome/free-solid-svg-icons": "^5.15.2",
+    "@fortawesome/react-fontawesome": "^0.1.14",
+    "antd": "^4.16.9",
+    "axios": "^0.21.1",
+    "concurrently": "^6.0.0",
+    "craco-less": "^2.0.0",
+    "prettier": "^2.8.8",
+    "prop-types": "^15.8.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.10.0",
+    "react-scripts": "5.0.1"
+  },
+  "scripts": {
+    "start": "craco start",
+    "build": "craco build",
+    "test": "craco test",
+    "ci-test": "CI=true craco test --verbose",
+    "coverage": "craco test --verbose --coverage --watchAll=false",
+    "eject": "react-scripts eject",
+    "lint": "eslint src/",
+    "lint:fix": "eslint src/ --fix",
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "description": "a simple React application for the An Enterprise React app.",
+  "main": "index.js",
+  "author": "Archer",
+  "license": "ISC",
+  "engines": {
+    "node": "^18.12.1"
+  },
+  "devDependencies": {
+    "@testing-library/dom": "^9.3.1",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/react-hooks": "^8.0.1",
+    "@testing-library/user-event": "^13.5.0",
+    "axios-mock-adapter": "^1.21.5",
+    "cypress": "^8.0.0",
+    "eslint": "^8.2.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-chai-friendly": "^0.7.2",
+    "eslint-plugin-cypress": "^2.13.3",
+    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-react": "^7.28.0",
+    "eslint-plugin-react-hooks": "^4.3.0"
+  }
+}
